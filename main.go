@@ -24,7 +24,6 @@ var validKey Key
 var expiredKey Key
 // generateKeys creates one valid RSA key and one expired RSA key.
 func generateKeys() {
-func generateKeys() {
 	// Current key
 	privateKey, _ := rsa.GenerateKey(rand.Reader, 2048)
 	// Generate a key that will be valid for one hour.
